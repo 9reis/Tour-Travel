@@ -57,10 +57,10 @@ videoBtn.forEach(btn =>{
 })
 
 /*****************************************************************************************\
-                                        SWIPER
+                                        SWIPER-REVIEW
 \*****************************************************************************************/
 
-let swiper = new Swiper(".review-slider", {
+var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     loop: true,
     autoplay:{
@@ -77,6 +77,34 @@ let swiper = new Swiper(".review-slider", {
         },
         1024: {
             slidesPerView:3,
+        }
+    }
+});
+
+/*****************************************************************************************\
+                                        SWIPER-BRANDS
+\*****************************************************************************************/
+
+var swiper = new Swiper(".brand-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay:{
+        delay:2500,
+        disableOnInteraction: false,
+    }, 
+    breakpoints: {
+        450: {
+            slidesPerView:2,
+        },
+        640: {
+            slidesPerView:3,
+        },
+
+        768: {
+            slidesPerView:4,
+        },
+        1024: {
+            slidesPerView:5,
         }
     }
 });
